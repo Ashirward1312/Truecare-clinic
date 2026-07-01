@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import {
   ArrowRight,
   Mail,
@@ -13,8 +13,7 @@ const Footer = () => {
   const quickLinks = [
     { name: "Home", to: "/" },
     { name: "About Us", to: "/about" },
-    { name: "Departments", to: "/departments" },
-    { name: "Doctors", to: "/doctors" },
+    { name: "Departments", to: "/department" },
     { name: "Contact", to: "/contact" },
   ];
 
@@ -106,13 +105,13 @@ const Footer = () => {
           <ul className="space-y-3 text-sm">
             {quickLinks.map((link) => (
               <li key={link.name}>
-                <NavLink
+                <Link
                   to={link.to}
                   className="flex items-center gap-2 text-gray-400 hover:text-teal-400 transition"
                 >
                   <ArrowRight size={14} />
                   {link.name}
-                </NavLink>
+                </Link>
               </li>
             ))}
           </ul>

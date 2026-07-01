@@ -1,17 +1,19 @@
 import React, { useState, useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
+import ScrollToTop from './components/ScrollToTop'
 import Header from './Pages/Header/Header'
+import Hero from './Pages/Hero/Hero'
+import Department from './Pages/Department/Department'
+import About from './Pages/About/About'
+import Testimonials from './Pages/Testimonials/Testimonials'
+import WhyChoose from './Pages/WhyChooseUs/WhyChooseUs'
+import Contact from './Pages/Contact/Contact'
 import Footer from './Pages/Footer/Footer'
 import Floating from "./Pages/Floating/Floating"
 import Appointment from './Pages/Appointment/Appointment'
-
-// Pages
-import HomePage from './Pages/Home/HomePage'
-import DepartmentsPage from './Pages/Departments/DepartmentsPage'
-import AboutPage from './Pages/About/About'
-import ContactPage from './Pages/Contact/ContactPage'
-// import DoctorsPage from './Pages/Doctors/DoctorsPage'
-import ScrollToTop from './ScrollToTop'
+import Mission from './Pages/Mission/Mission'
+import Vission from './Pages/Vision/Vision'
+import Faq from './Pages/Faq/Faq'
 
 function App() {
   const [isAppointmentOpen, setIsAppointmentOpen] = useState(false);
@@ -31,13 +33,23 @@ function App() {
       <Floating />
       <Appointment isOpen={isAppointmentOpen} onClose={() => setIsAppointmentOpen(false)} />
       
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/departments" element={<DepartmentsPage />} />
-        {/* <Route path="/doctors" element={<DoctorsPage />} /> */}
-        <Route path="/contact" element={<ContactPage />} />
-      </Routes>
+      <main className="pt-24">
+        <Routes>
+          <Route path="/" element={
+            <>
+              <Hero />
+              <Mission />
+              <Vission />
+              <Testimonials />
+              <WhyChoose />
+              <Faq />
+            </>
+          } />
+          <Route path="/about" element={<About />} />
+          <Route path="/department" element={<Department />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </main>
 
       <Footer />
     </div>

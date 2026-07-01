@@ -151,7 +151,7 @@ const FastIcon = ({ Icon, color, bg }) => {
 
 const PremiumMedicalServices = () => {
   return (
-    <section className="relative py-36 bg-slate-50 overflow-hidden">
+    <section id="departments" className="relative py-36 bg-slate-50 overflow-hidden">
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         <div className="text-center mb-24">
           <div className="inline-flex items-center gap-2 bg-teal-50 border border-teal-100 px-6 py-2 rounded-full text-xs tracking-widest uppercase text-teal-600 mb-6 font-semibold shadow-sm">
