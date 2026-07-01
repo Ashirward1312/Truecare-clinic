@@ -8,7 +8,7 @@ import Appointment from './Pages/Appointment/Appointment'
 // Pages
 import HomePage from './Pages/Home/HomePage'
 import DepartmentsPage from './Pages/Departments/DepartmentsPage'
-import AboutPage from './Pages/About/AboutPage'
+import AboutPage from './Pages/About/About'
 import ContactPage from './Pages/Contact/ContactPage'
 // import DoctorsPage from './Pages/Doctors/DoctorsPage'
 import ScrollToTop from './ScrollToTop'
