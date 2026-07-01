@@ -56,7 +56,7 @@ const cardVariants = {
   show: { opacity: 1, y: 0 },
 };
 
-const WhyChoose = () => {
+const WhyChooseUs = () => {
   return (
     <section className="relative py-32 bg-gradient-to-b from-white via-slate-50 to-slate-100 overflow-hidden">
 
@@ -141,4 +141,4 @@ const WhyChoose = () => {
   );
 };
 
-export default WhyChoose;
+export default WhyChooseUs;
