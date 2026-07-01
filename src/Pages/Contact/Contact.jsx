@@ -41,8 +41,10 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="relative py-28 bg-gradient-to-b from-[#0f172a] via-[#111827] to-[#0b1220] text-white overflow-hidden">
-
+<section
+  id="contact"
+  className="relative pt-36 pb-28 bg-gradient-to-b from-[#0f172a] via-[#111827] to-[#0b1220] text-white overflow-hidden"
+>
       {/* Soft Background Glow */}
       <div className="absolute -top-24 left-0 w-96 h-96 bg-teal-500/20 rounded-full blur-[140px]" />
       <div className="absolute -bottom-24 right-0 w-96 h-96 bg-cyan-500/20 rounded-full blur-[140px]" />

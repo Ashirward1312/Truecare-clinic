@@ -33,7 +33,7 @@ function App() {
       <Floating />
       <Appointment isOpen={isAppointmentOpen} onClose={() => setIsAppointmentOpen(false)} />
       
-      <main className="pt-24">
+      <main className="pt-15">
         <Routes>
           <Route path="/" element={
             <>
