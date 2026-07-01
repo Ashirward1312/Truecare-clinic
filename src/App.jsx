@@ -6,7 +6,7 @@ import Hero from './Pages/Hero/Hero'
 import Department from './Pages/Department/Department'
 import About from './Pages/About/About'
 import Testimonials from './Pages/Testimonials/Testimonials'
-import WhyChoose from './Pages/WhyChooseUs/WhyChooseUs'
+import WhyChooseUs from './Pages/WhyChooseUs/WhyChooseUs'
 import Contact from './Pages/Contact/Contact'
 import Footer from './Pages/Footer/Footer'
 import Floating from "./Pages/Floating/Floating"
@@ -41,7 +41,7 @@ function App() {
               <Mission />
               <Vission />
               <Testimonials />
-              <WhyChoose />
+              <WhyChooseUs />
               <Faq />
             </>
           } />
